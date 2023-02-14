@@ -1,0 +1,165 @@
+body{
+    background-color: 
+}
+.container{
+    position: relative;
+    width: 500px;
+}
+
+.bus{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background:#FD841F ;
+    border: 4px solid black;
+    border-radius: 1em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+.win-con{
+position: absolute;
+left: 8%;
+top: 8%;
+gap: 40px;
+display: flex;
+}
+
+.window{
+    width:80px;
+    height: 100px ;
+    background-color: #5BC0F8;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 3px 2px 0px 1px rgba(15,80,166,0.54);
+-webkit-box-shadow: 3px 2px 0px 1px rgba(15,80,166,0.54);
+-moz-box-shadow: 3px 2px 0px 1px rgba(15,80,166,0.54);
+}
+
+.door{
+    width: 80px;
+    height: 140px;
+    background-color: grey;
+    position: absolute;
+    left: 80%;
+    bottom: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.door-line{
+    width: 10px;
+    height: 140px;
+    background-color: black;
+}
+
+.stop-light{
+    width: 20px;
+    height: 60px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 2px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.light{
+width: 10px;
+height: 10px;
+background-color: black;
+border-radius: 50%;
+}
+.wheel-bg{
+    background-color: red;
+}
+
+.wheel-1{
+background-color:grey;
+width: 70px;
+height: 70px;
+border: 2px solid black;
+border-radius: 50%;
+position: absolute;
+top: 80%;
+left: 8%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.wheel-2{
+width: 70px;
+height: 70px;
+border: 2px solid black;
+border-radius: 50%;
+position:absolute;
+background-color: grey;
+top: 80%;
+left: 30%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.wheel-3{
+width: 70px;
+height: 70px;
+border: 2px solid black;
+border-radius: 50%;
+position: absolute;
+background-color: grey;
+top: 80%;
+left: 60%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.wheel-line-1{
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    transform: rotate(90deg);
+    position: absolute;
+    
+}
+.wheel-line-2{
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+}
+.wheel-line-short-1{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.wheel-line-short-2{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(135deg);
+    
+}
+.wheel-1 .wheel-2 .wheel-3{
+    animation: wheel  timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes wheel {
+    0%{
+        transform: rotate(360deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
