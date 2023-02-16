@@ -148,17 +148,67 @@ justify-content: center;
     transform: rotate(135deg);
     
 }
-.wheel-1 .wheel-2 .wheel-3{
-    animation: wheel  timing-function delay iteration-count direction fill-mode;
+.wheel-1{
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
 }
+.wheel-2{
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
+.wheel-3{
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
+
+
 
 @keyframes wheel {
     0%{
-        transform: rotate(360deg);
+        transform: rotate(0deg);
 
     }
     100%{
         transform: rotate(360deg);
+    }
+    
+}
+
+.container{
+    animation: bus 20s linear infinite;
+    
+    top: 210px;
+}
+
+@keyframes bus{
+    0%{
+        left: -20%;
+        }
+    100%{
+        left: 120%;
+        }
+}
+
+body{
+    background-image: url(/src/style/city.jpeg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation-name: body;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes body {
+    to{
+        background-position: -3000px 0;
     }
     
 }
